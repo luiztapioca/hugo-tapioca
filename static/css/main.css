@@ -7,6 +7,9 @@
 body{max-width:800px;margin:auto;padding: 1em;line-height:1.5;}
 
 .post-params{display:inline-flex;}
+.post-params-separator{margin:0 0.5em 0 0.5em;}
+.post-params-title{font-weight:bolder;}
+.post-params-date{font-style:italic;color:var(--link-color);}
 
 header{display:flex;align-items: center;margin-bottom:-1em;}
 .header-title a,a:visited{text-decoration:none;color:var(--link-color);}
