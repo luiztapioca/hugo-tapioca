@@ -1,8 +1,13 @@
 {{ define "main" }}
     <div class="post-params">
-        <span class="post-params-date">{{ time.Format "02/01/2006" .Params.date }}</span>
-        <span class="post-params-separator">~</span>
-        <span class="post-params-title">{{ .Params.title }}</span>
+        <p class="post-params-title">
+            <i class="fa-solid fa-pen"></i> ~
+            {{ .Params.title }}
+        </p>
+        <p class="post-params-date">
+            <i class="fa-solid fa-calendar"></i> ~
+            {{ time.Format "02/01/2006" .Params.date }}
+        </p>
     </div>
     <div class="post-content">
         {{ .Content }}

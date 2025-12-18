@@ -21,3 +21,15 @@ $$
 )
 $$
 ![tapioca](img/tapioca.jpg)
+
+- one
+- two
+- three
+
+| Header 1 | Header 2 | Header 3 |
+| :--- | :--- | :--- |
+| Lorem ipsum dolor | Sit amet consectetur | Adipiscing elit sed |
+| Eiusmod tempor | Incididunt ut labore | Et dolore magna |
+| Ut enim ad minim | Veniam quis nostrud | Exercitation ullamco |
+| Laboris nisi ut | Aliquip ex ea commodo | Consequat duis aute |
+| Irure dolor in | Reprehenderit in | Voluptate velit esse |

@@ -6,16 +6,22 @@
 
 body{max-width:800px;margin:auto;padding: 1em;line-height:1.5;}
 
-.post-params{display:inline-flex;}
+.post-params{display:inline;line-height:normal;margin: 0 0 0 0;}
 .post-params-separator{margin:0 0.5em 0 0.5em;}
 .post-params-title{font-weight:bolder;}
-.post-params-date{font-style:italic;color:var(--link-color);}
+.post-params-date{font-style:italic;color:var(--link-color);margin-top: -0.5rem;}
+.post-content{margin-top:0 0 -1rem 0;}
 
-header{display:flex;align-items: center;margin-bottom:-1em;}
+.posts-date{font-style:italic;}
+.posts-title{font-weight:bolder;}
+
+header{display:flex-inline;align-items: center;margin: 0 0 -0.5rem 0;}
 .header-title a,a:visited{text-decoration:none;color:var(--link-color);}
-.header-sections {list-style-type:none; display:inline-flex;}
-.header-section a {margin:0 1rem 0 1rem;text-decoration: none;color:var(--link-color);}
-.home-post a:visited{text-decoration:none;color:var(--link-visited-color);}
+.header-sections {gap:1rem;list-style-type:none;padding:0;margin:0; display:inline-flex;}
+.header-section a {text-decoration:none;color:var(--link-color)!important;}
+.home-post a:visited{text-decoration:none;color:var(--link-visited-color)!important;}
+.home-posts{list-style:none; margin-left: -2.5rem;}
+.header-separator{margin:0 1rem 0 1rem;}
 
 .active{font-weight:bolder;}
 
@@ -28,9 +34,21 @@ blockquote{color:var(--font-color);background-color:var(--quote-bg-color);border
 .highlight{margin:1em 0 1em 0;}
 .not-found{text-align:center;}
 
-hr{margin: 1em 0 1em 0;}
+hr{margin: 1em 0 1em 0;border:1px solid var(--font-color);}
 
 h1,h2,h3,h4,h5,h6{margin:1.5em 0 0.5em 0;line-height:1.2;}
 
+h1 { font-size: 2rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1rem; }
+h6 { font-size: 0.875rem;}
+
 img{max-width:90%;height:auto;margin: 1em auto 1em auto;display: flex;}
 .katex-html{color:var(--font-color);margin: 1em 0 1em 0;}
+img, iframe, video { max-width: 100%; }
+table {margin: auto;border-top: 1px solid #eee;border-bottom: 1px solid #eee;}
+table thead th { border-bottom: 1px solid #eee; }
+th, td { padding: 5px; }
+thead, tfoot, tr:nth-child(even) { background: #202020; }
