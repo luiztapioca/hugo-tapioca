@@ -1,12 +1,23 @@
 baseURL: 'https://example.org/'
 languageCode: 'en-us'
 title: 'hugo.tapioca'
+defaultContentLanguage: 'en'
 
 params:
   author:
     name: 'Seu nome'
-  pages:
-    - name: 'Home'
-      url: '/'
-    - name: 'About'
-      url: '/about'
+
+languages:
+  en:
+    languageName: 'English'
+    weight: 1
+    title: 'hugo.tapioca'
+  pt:
+    languageName: 'Português'
+    weight: 2
+    title: 'hugo.tapioca'
+
+markup:
+  highlight:
+    lineNos: false
+    noClasses: false

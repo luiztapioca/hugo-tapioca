@@ -1,8 +1,10 @@
-<header>
-    <p>{{ .Site.Title }}</p>
-    <ul>
-        {{ with .Site.Params.pages }}
-            {{ .title }}
-        {{ end }}
-    </ul>
-</header>
+<h2 class="header-title"><a href="{{ "/" | relURL }}">{{ .Site.Title }}</a></h2>
+<ul class="header-sections">
+    {{ range .Site.Sections }}
+        <li class="header-section">
+            <a href="{{ .RelPermalink }}">
+                {{ .LinkTitle }}
+            </a>
+        </li>
+    {{ end }}
+</ul>

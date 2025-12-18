@@ -1,3 +1,13 @@
 {{ define "main" }}
-    {{ .Content }}
+<h2>{{ .Title }}</h2>
+{{ .Content }}
+{{ if not (.IsHome)}} 
+{{ range .Pages }}
+<ul>
+    <li class="home-posts">
+        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+    </li>
+</ul>
+{{ end }}
+{{ end }}
 {{ end }}

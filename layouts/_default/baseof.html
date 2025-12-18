@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ .Lang }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ .Page.Title }}</title>
-    <link rel="stylesheet" href={{ "main.css" | absURL }}>
+    <title>{{ if .IsHome }}{{  .Page.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+    <link rel="stylesheet" href={{ "css/main.css" | relURL }}>
 </head>
 <body>
-    {{ partial "header.html" . }}
+    <header>
+        {{ partial "header.html" . }}
+    </header>
     <hr>
-    {{ block "main" . }}
-    {{ end }}
+    <main>
+        {{ block "main" . }}{{ end }}
+    </main>
     <hr>
-    {{ partial "footer.html" . }}
+    <footer>
+        {{ partial "footer.html" . }}
+    </footer>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
 </body>
 </html>

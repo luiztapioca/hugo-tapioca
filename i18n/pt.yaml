@@ -1,0 +1,23 @@
+- id: home
+  translation: "Início"
+
+- id: about
+  translation: "Sobre"
+
+- id: posts
+  translation: "Postagens"
+
+- id: readMore
+  translation: "Ler mais"
+
+- id: allPosts
+  translation: "Todas as Postagens"
+
+- id: recentPosts
+  translation: "Postagens Recentes"
+
+- id: tags
+  translation: "Tags"
+
+- id: categories
+  translation: "Categorias"
