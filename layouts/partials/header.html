@@ -3,28 +3,9 @@
 <ul class="header-sections">
 {{ $currentPage := .}}
 {{ range .Site.Menus.main }}
-    <li class="header-section {{ if eq $currentPage.RelPermalink .URL }}active{{ end }}"><a href="{{ .URL | relURL }}">
+    <li class="header-section {{ if eq $currentPage.RelPermalink .URL }}active{{ end }}"><a href="{{ .URL }}">
             {{ .Name }}
         </a>
-    </li>
-{{ end }}
-{{ if .Site.IsMultiLingual }}
-    <li class="header-section language-switcher">
-    {{ range .Site.Languages }}
-        {{ if eq . $.Site.Language }}
-            <span class="lang-active">{{ .LanguageName }}</span>
-        {{ else }}
-            {{ if $.IsTranslated }}
-                {{ with $.Translations.ByLanguage .Lang }}
-                    <a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>
-                {{ else }}
-                    <a href="{{ relLangURL .Lang }}">{{ .LanguageName }}</a>
-                {{ end }}
-            {{ else }}
-                <a href="{{ relLangURL .Lang }}">{{ .LanguageName }}</a>
-            {{ end }}
-        {{ end }}
-    {{ end }}
     </li>
 {{ end }}
 </ul>
