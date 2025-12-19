@@ -1,6 +1,6 @@
 baseURL: 'https://boot.tec.br/blog/'
 languageCode: 'pt-br'
-title: 'hugo.tapioca'
+title: 'tapioca.blog'
 defaultContentLanguage: 'pt'
 
 params:
@@ -11,11 +11,11 @@ languages:
   en:
     languageName: 'English'
     weight: 1
-    title: 'hugo.tapioca'
+    title: 'tapioca.blog'
   pt:
     languageName: 'Português'
     weight: 2
-    title: 'hugo.tapioca'
+    title: 'tapioca.blog'
 
 markup:
   highlight:
