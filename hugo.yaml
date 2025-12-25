@@ -5,7 +5,7 @@ defaultContentLanguage: 'pt'
 
 params:
   author:
-    name: 'Luiz Gustavo'
+    name: 'Luiz G.'
 
 markup:
   highlight:
